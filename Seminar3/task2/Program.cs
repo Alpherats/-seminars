@@ -12,22 +12,22 @@ int ReadInt(string text)
 
 double CalcDist(int[] arr1, int[] arr2)
 {
-  
-  double dist =Math.Round(Math.Sqrt(Math.Pow((arr2[0]-arr1[0]),2) + Math.Pow((arr2[1]-arr1[1]),2) + Math.Pow((arr2[2]-arr1[2]),2)),2);
+
+  double dist = Math.Round(Math.Sqrt(Math.Pow((arr2[0] - arr1[0]), 2) + Math.Pow((arr2[1] - arr1[1]), 2) + Math.Pow((arr2[2] - arr1[2]), 2)), 2);
   return dist;
 }
 
 
-int[] first_coord = new int [3];
+int[] first_coord = new int[3];
 
 first_coord[0] = ReadInt("Insert X of the first coord ");
 first_coord[1] = ReadInt("Insert Y of the first coord ");
 first_coord[2] = ReadInt("Insert Z of the first coord ");
 
-int[] second_coord = new int [3];
+int[] second_coord = new int[3];
 
 second_coord[0] = ReadInt("Insert X of the second coord ");
 second_coord[1] = ReadInt("Insert Y of the second coord ");
 second_coord[2] = ReadInt("Insert Z of the second coord ");
 
-System.Console.WriteLine(CalcDist(first_coord,second_coord));
+System.Console.WriteLine(CalcDist(first_coord, second_coord));
