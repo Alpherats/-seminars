@@ -6,7 +6,7 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Insert number 2: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
-if (number1>number2)
+if (number1 > number2)
 {
   Console.WriteLine($"Max - {number1} , Min - {number2}");
 }
@@ -28,14 +28,14 @@ Console.WriteLine("Insert number 3: ");
 int third = Convert.ToInt32(Console.ReadLine());
 
 int max_num = first;
-if (second>max_num && second>third)
+if (second > max_num && second > third)
 {
   max_num = second;
   Console.WriteLine($"Max - {max_num}");
 }
-else if (third>max_num && third>second)
+else if (third > max_num && third > second)
 {
-  max_num=third;
+  max_num = third;
   Console.WriteLine($"Max - {max_num}");
 }
 else
@@ -50,7 +50,7 @@ else
 Console.WriteLine("Insert number: ");
 int even = Convert.ToInt32(Console.ReadLine());
 
-if (even%2 ==0)
+if (even % 2 == 0)
 {
   Console.WriteLine($"{even} is even");
 }
@@ -67,20 +67,20 @@ Console.WriteLine("Insert number: ");
 int end = Convert.ToInt32(Console.ReadLine());
 int counter = 1;
 
-if(end<0)
+if (end < 0)
 {
   Console.WriteLine("Insert positive number!");
 }
 else
 {
   while (counter < end)
-{
-  if(counter%2==0)
   {
-    Console.WriteLine(counter);
+    if (counter % 2 == 0)
+    {
+      Console.WriteLine(counter);
+    }
+    counter++;
   }
-  counter ++;
-}
 }
 
 
