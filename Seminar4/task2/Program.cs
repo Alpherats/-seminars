@@ -6,7 +6,7 @@
 
 // 9012 -> 12
 
-// ОФОРМИТЬ ЧЕРЕЗ VOID MAIN
+
 void Main()
 {
   int num = ReadInt("Insert number: ");
